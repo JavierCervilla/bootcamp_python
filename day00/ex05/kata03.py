@@ -3,7 +3,7 @@
 def main():
 	phrase = "The right format"
 	l = len(phrase)
-	str = "{}{}".format((42 - len(phrase)) * "-", phrase)
+	str = "{:{fill}{allign}{width}}".format(phrase, fill = "-", allign = '>', width = 42)
 	print(str)
 
 if __name__ == "__main__":

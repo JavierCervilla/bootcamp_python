@@ -1,4 +1,4 @@
-pip list
+pip list | awk  '{print $1}
 pip freeze
 pip show numpy
 pip search tesseract
